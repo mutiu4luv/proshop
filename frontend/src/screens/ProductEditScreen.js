@@ -126,7 +126,7 @@ const ProductEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId="image">
+            {/* <Form.Group controlId="image">
               <Form.Label>Image</Form.Label>
               <Form.Control
                 type="text"
@@ -141,7 +141,7 @@ const ProductEditScreen = ({ match, history }) => {
                 onChange={uploadFileHandler}
               ></Form.File>
               {uploading && <Loader />}
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group controlId="brand">
               <Form.Label>Brand</Form.Label>
@@ -150,6 +150,16 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder="Enter brand"
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId="image">
+              <Form.Label>Image</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Image Link"
+                value={image}
+                onChange={(e) => setImage(e.target.value)}
               ></Form.Control>
             </Form.Group>
 

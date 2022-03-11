@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
 import { Table, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
@@ -66,11 +66,11 @@ const UserListScreen = ({ history }) => {
                   )}
                 </td>
                 <td>
-                  <LinkContainer to={`/admin/user/${user._id}/edit`}>
+                  <Link to={`/admin/user/${user._id}/edit`}>
                     <Button variant="light" className="btn-sm">
                       <i className="fas fa-edit"></i>
                     </Button>
-                  </LinkContainer>
+                  </Link>
                   <Button
                     variant="danger"
                     className="btn-sm"

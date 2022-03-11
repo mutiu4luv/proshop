@@ -1,0 +1,102 @@
+.our-team {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.team {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.897);
+}
+.para {
+  justify-content: center;
+  text-align: center;
+
+  font-size: 13px;
+
+  margin-top: 40px;
+}
+.img-bobby {
+  height: 50vh;
+  width: 23vw;
+}
+.who {
+  font-size: 12px;
+  color: grey;
+  font-weight: 200;
+  margin-top: 50px;
+}
+.bobby-para {
+  width: 80%;
+  margin-left: 40px;
+  font-size: 12px;
+  color: grey;
+}
+.mutiu-para {
+  width: 70%;
+  margin-left: 59px;
+  font-size: 12px;
+  color: grey;
+}
+.name {
+  margin-top: 20px;
+  font-style: oblique;
+  font-size: small;
+}
+.comp {
+  font-size: 10px;
+  font-style: oblique;
+}
+.picture {
+  display: flex;
+  margin-top: 50px;
+
+  /* width: 100%; */
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1200px) {
+  .picture {
+    justify-content: space-around;
+  }
+  .our-team {
+    height: auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  .picture {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 750px) {
+  .picture {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .bobby-para {
+    width: 40%;
+    margin-left: 150px;
+  }
+  .mutiu-para {
+    width: 40%;
+    margin-left: 150px;
+  }
+  .img-bobby {
+    width: 40%;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .picture {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .bobby-para {
+    margin-right: 300px;
+  }
+  .mutiu-para {
+    margin-right: 300px;
+  }
+}
